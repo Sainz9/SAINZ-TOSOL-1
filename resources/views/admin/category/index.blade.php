@@ -21,7 +21,7 @@
                     </td>
                     <td class="px-4 py-2">
                         <div class="flex items-center justify-end gap-2">
-                            <a href="/admin/categories/{{ $category->id }}/edit" class="px-3 py-1.5 rounded-md border border-gray-300 hover:bg-gray-50 text-sm">Засах</a>
+                            <a href="/admin/categories/{{ $category->id }}/edit" class="px-3 py-1.5 rounded-md border border-gray-300 hover:bg-gray-50 text-sm">Янзлах</a>
                             <form action="/admin/categories/{{ $category->id }}" id="delete-form-{{$category->id}}" method="POST">
                                 @csrf @method('DELETE')
                                 <button type="button" onclick="confirmDelete({{ $category->id }})" class="px-3 py-1.5 rounded-md bg-red-600 text-white text-sm">
